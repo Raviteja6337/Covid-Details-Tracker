@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#faf0f0"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/countryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INDIA"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textColor="#202020"
+                android:layout_weight="1"
+                android:textSize="15sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/cntryCasesCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="242424"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="#202020"
+                android:textSize="15sp">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
