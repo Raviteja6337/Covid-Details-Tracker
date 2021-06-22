@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null)
+            getSupportActionBar().hide();
 
         countryCodePicker = findViewById(R.id.cntryCodePicker);
         mtodayCases = findViewById(R.id.todayTotalCases);
